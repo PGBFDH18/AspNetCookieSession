@@ -1,0 +1,25 @@
+﻿@model PrivacyMessage
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<form method="post">
+    <p>
+        <input type="text" name="secretMessage" />
+        <button type="submit">Click me</button>
+    </p>
+</form>
+
+@*<h2>Welcome @ViewBag.Username</h2>*@
+@*<h2>Player @ViewBag.Playername</h2>*@
+
+@*Med ViewBag:*@
+@*<p>Public message: @ViewBag.Message</p>*@
+@*<p>Secret message: @ViewBag.SecretMessage</p>*@
+
+@*Med model:*@
+<p>Public message: @Model.Message</p>
+<p>Secret message: @Model.SecretMessage</p>
